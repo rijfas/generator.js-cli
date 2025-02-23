@@ -1,0 +1,27 @@
+{
+  "name": "npm_package_generate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rijfas/generator.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bin": {
+    "npm_package_generate": "./index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/rijfas/generator.js/issues"
+  },
+  "homepage": "https://github.com/rijfas/generator.js#readme",
+  "description": "",
+  "dependencies": {
+    "@inquirer/prompts": "^7.3.2"
+  }
+}
