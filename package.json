@@ -1,5 +1,5 @@
 {
-  "name": "npm_package_generate",
+  "name": "code-generator-js-cli",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
   "license": "ISC",
   "type": "commonjs",
   "bin": {
-    "npm_package_generate": "./index.js"
+    "code-generator-js-cli": "./index.js"
   },
   "bugs": {
     "url": "https://github.com/rijfas/generator.js/issues"

@@ -40,15 +40,14 @@ const cloneRepo = async () => {
         // Move all contents from temp directory to current directory
         const files = fs.readdirSync(path.join(process.cwd(), tempDir));
         files.forEach(file => {
+            if(file !== '.git' && file !== 'package-lock.json') {
             fs.renameSync(
                 path.join(process.cwd(), tempDir, file),
                 path.join(process.cwd(), file)
             );
+            }
         });
 
-        //delete package-lock.json and .git
-        fs.unlinkSync(path.join(process.cwd(), 'package-lock.json'));
-        fs.unlinkSync(path.join(process.cwd(), '.git'));
         
         // Clean up - remove the temp directory
         fs.rmSync(tempDir, { recursive: true, force: true });
